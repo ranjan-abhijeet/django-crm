@@ -9,6 +9,8 @@
 
         {% if user.is_authenticated %}
           <li class="nav-item">
+          <a class="nav-link" href="{% url 'add_record' %}">Add Customer</a>
+          <li class="nav-item">
           <a class="nav-link" href="{% url 'logout' %}">Logout</a>
         {% else %}
           <li class="nav-item">
